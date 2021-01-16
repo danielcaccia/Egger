@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,18 +12,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Egger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="T6N-7y-jde" userLabel="Vert Stack View">
-                                <rect key="frame" x="0.0" y="44" width="375" height="760"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="760"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QA1-LI-u9U" userLabel="Title View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="252"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap your egg!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="CUb-U7-eFO">
-                                                <rect key="frame" x="68.666666666666686" y="101.66666666666666" width="238" height="49"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap your egg!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="CUb-U7-eFO">
+                                                <rect key="frame" x="105.00000000000001" y="107.66666666666666" width="180.33333333333337" height="37"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                                 <color key="textColor" red="0.31372549019607843" green="0.31764705882352939" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" red="0.84313725490000002" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -31,12 +31,12 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="CUb-U7-eFO" firstAttribute="centerX" secondItem="QA1-LI-u9U" secondAttribute="centerX" id="3oO-S2-IUN"/>
-                                            <constraint firstItem="CUb-U7-eFO" firstAttribute="centerY" secondItem="QA1-LI-u9U" secondAttribute="centerY" id="W1g-69-QpM"/>
+                                            <constraint firstItem="CUb-U7-eFO" firstAttribute="centerX" secondItem="QA1-LI-u9U" secondAttribute="centerX" id="I63-fg-0Pv"/>
+                                            <constraint firstItem="CUb-U7-eFO" firstAttribute="centerY" secondItem="QA1-LI-u9U" secondAttribute="centerY" id="oLJ-hx-5NR"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleAspectFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ejW-2z-lSz" userLabel="Egg Stack View">
-                                        <rect key="frame" x="0.0" y="254" width="375" height="252"/>
+                                        <rect key="frame" x="0.0" y="254" width="390" height="252"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="erx-RF-8Xi" userLabel="A La Coq">
                                                 <rect key="frame" x="0.0" y="66" width="90" height="120"/>
@@ -48,9 +48,12 @@
                                                     <color key="titleColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" red="0.84313725490000002" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="eggSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OM7-cK-q5C"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSu-VD-7Hh" userLabel="Barzotto">
-                                                <rect key="frame" x="95" y="66" width="90" height="120"/>
+                                                <rect key="frame" x="100" y="66" width="90" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xSu-VD-7Hh" secondAttribute="height" multiplier="3:4" id="RPk-3E-79C"/>
                                                 </constraints>
@@ -61,9 +64,12 @@
                                                     <color key="titleColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" red="0.84313725490000002" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="eggSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eb0-3e-rFA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgA-mx-b5h" userLabel="Medium">
-                                                <rect key="frame" x="190" y="66" width="90" height="120"/>
+                                                <rect key="frame" x="200" y="66" width="90" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="HgA-mx-b5h" secondAttribute="height" multiplier="3:4" id="sMn-rI-2xI"/>
                                                 </constraints>
@@ -74,9 +80,12 @@
                                                     <color key="titleColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" red="0.84313725490000002" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="eggSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NKc-or-7Op"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isV-R7-PnZ" userLabel="Hard">
-                                                <rect key="frame" x="285" y="66" width="90" height="120"/>
+                                                <rect key="frame" x="300" y="66" width="90" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="isV-R7-PnZ" secondAttribute="height" multiplier="3:4" id="S61-TB-U7p"/>
                                                 </constraints>
@@ -87,23 +96,26 @@
                                                     <color key="titleColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" red="0.84313725490000002" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="eggSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L3e-Qf-ZJ9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4y-KA-3fY" userLabel="Timer View">
-                                        <rect key="frame" x="0.0" y="508" width="375" height="252"/>
+                                        <rect key="frame" x="0.0" y="508" width="390" height="252"/>
                                         <subviews>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Y7q-65-bZW">
-                                                <rect key="frame" x="50" y="124" width="275" height="4"/>
+                                                <rect key="frame" x="20" y="124" width="350" height="4"/>
                                                 <color key="progressTintColor" red="0.31372549020000001" green="0.31764705879999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="trackTintColor" red="0.84313725490000002" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </progressView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Y7q-65-bZW" firstAttribute="centerX" secondItem="R4y-KA-3fY" secondAttribute="centerX" id="D1w-i7-AVP"/>
-                                            <constraint firstAttribute="trailing" secondItem="Y7q-65-bZW" secondAttribute="trailing" constant="50" id="HxH-Ag-MYx"/>
+                                            <constraint firstAttribute="trailing" secondItem="Y7q-65-bZW" secondAttribute="trailing" constant="20" id="HxH-Ag-MYx"/>
                                             <constraint firstItem="Y7q-65-bZW" firstAttribute="centerY" secondItem="R4y-KA-3fY" secondAttribute="centerY" id="SbA-Cd-LF3"/>
-                                            <constraint firstItem="Y7q-65-bZW" firstAttribute="leading" secondItem="R4y-KA-3fY" secondAttribute="leading" constant="50" id="heg-Kr-QDk"/>
+                                            <constraint firstItem="Y7q-65-bZW" firstAttribute="leading" secondItem="R4y-KA-3fY" secondAttribute="leading" constant="20" id="heg-Kr-QDk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -127,6 +139,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="Y7q-65-bZW" id="aIU-zW-Xp5"/>
                         <outlet property="titleLabel" destination="CUb-U7-eFO" id="M2U-O3-ewR"/>
                     </connections>
                 </viewController>
