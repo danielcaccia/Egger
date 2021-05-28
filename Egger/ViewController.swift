@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var secondsPassed = 0
     let eggTimes = [
         "A La Coq" : 180,
-        "Barzotto" : 300,
+        "Barzotto" : 5,
         "Medium" : 420,
         "Hard" : 720
     ]
